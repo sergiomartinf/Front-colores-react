@@ -1,7 +1,7 @@
 function Item({id,r,g,b,borrarColor}){
     return <li style={ { backgroundColor : `rgb(${[r,g,b].join(",")})`} }
                 onClick={() => {
-                    fetch("http://localhost:3000/borrar",{
+                    fetch("https://api-colores-mongodb-er8c.onrender.com/borrar",{
                     method : "DELETE",
                     body : JSON.stringify({id}),
                     headers : {

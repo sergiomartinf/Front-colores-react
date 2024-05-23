@@ -22,7 +22,7 @@ function Formulario({crearColor}){
             [r,g,b].forEach( n => valido = valido && n <= 255)
     
             if(valido){
-                return fetch("http://localhost:3000/nuevo",{
+                return fetch("https://api-colores-mongodb-er8c.onrender.com/nuevo",{
                     method : "POST",
                     body : JSON.stringify({r,g,b}),
                     headers : {
