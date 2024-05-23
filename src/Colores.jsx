@@ -7,7 +7,7 @@ function Colores(){
     let [colores,setColores] = useState([])
 
     useEffect(() => {
-        fetch("https://api-colores-mongodb-er8c.onrender.com")
+        fetch("https://api-colores-mongodb-er8c.onrender.com/colores")
         .then(respuesta => respuesta.json())
         .then(colores => setColores(colores))
     }, [])
